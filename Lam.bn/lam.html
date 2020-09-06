@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .d-flex {
+        display: flex;
+    }
+
+    .d-flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrap-header {
+        background-color: black;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .menu {
+        width: 60%;
+    }
+
+    .contact-now {
+        padding: 0px;
+        width: 20%;
+        border: none;
+        color: white;
+    }
+
+    .btn-header-btn {
+        background: #f04e3c;
+        padding: 27px 44px;
+        text-transform: uppercase;
+        font-family: "Prompt", sans-serif;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 0px;
+        -moz-user-select: none;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 0;
+        margin-bottom: 0;
+        margin: 10px;
+        cursor: pointer;
+        transition: color 0.4s linear;
+        position: relative;
+        z-index: 1;
+        border: 0;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    li {
+        list-style: none;
+        font-weight: 400px;
+        margin: 10px 10px;
+    }
+
+    a {
+        color: turquoise;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    .f-right {
+        float: right;
+    }
+    .wrap-banner{
+        position: relative;
+    }
+
+    .img-banner{
+        position: absolute;
+        width: fit-content;
+        top: 0;
+        right: 0;
+    
+    .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="wrap-header d-flex">
+
+        <div class="logo d-flex-center">
+            <img src="https://www.lvly.com.au/wp-content/uploads/2016/10/LVLY_Luxe_c-600x750.jpg" alt="">
+        </div>
+
+
+        <div class="menu">
+            <ul class="d-flex">
+                <li> <a href="">Home</a> </li>
+                <li> <a href="">About</a> </li>
+                <li><a href=""> Gallerry</a></li>
+                <li><a href=""> More</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="contact-now f-right d-flex-center">
+
+            <a href="contact.html" class="btn-header-btn">Contact now</a>
+        </div>
+
+
+    </div>
+    <main>
+
+
+        <div class="wrap-banner">
+            <div class="title">
+                <div>CREATIVE PHOTOGRAPHEY</div>
+                <div>PHOTOGRAPHY MAKE US HAPPY TAKE A SHOT.</div>
+                <div class="contact-now d-flex-center">
+                    <a href="contact.html" class="btn-header-btn">Contact now</a>
+                </div>
+            </div>
+
+
+            <div class="img-banner">
+                <img src="https://venturology.files.wordpress.com/2016/02/img_8135.jpg"
+                    alt="">
+
+            </div>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="icon"
+        href="https://png.pngtree.com/png-clipart/20191121/original/pngtree-one-line-drawing-acoustic-guitar-music-instrument-vector-illustration-minimalist-design-png-image_5103852.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+
+    .d-flex {
+        display: flex;
+    }
+
+    .d-flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .logo {
+        width: 20%;
+        color: #fff;
+        font-family: sans-serif;
+        background-color: transparent;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+
+    }
+
+    .menu {
+        width: 60%;
+    }
+
+    .contact {
+        width: 20%;
+        color: #fff;
+    }
+
+    .menu li {
+        list-style: none;
+        margin: 10px;
+        padding: 10px;
+        display: block;
+        height: 100%;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: rgb(110, 107, 101);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: block;
+    }
+
+    .menu li:hover {
+        background-color: yellow;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .wrap-header {
+        background-color: black;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 5px;
+        background-color: rgb(226, 226, 226);
+        margin: 5px;
+    }
+
+
+    .poster {
+
+        position: relative;
+    }
+
+    .img-banner {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-size: cover;
+        height: 300px;
+        width: 50vw;
+    }
+
+    .main {
+        background-image: url(https://venturology.files.wordpress.com/2016/02/img_8135.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 750px;
+    }
+
+    .header-2 {
+        display: inline-block;
+        background: violet;
+
+        font-size: 200%;
+        line-height: 1.5cm;
+        font-weight: 400;
+        border: 0;
+        margin: 20px;
+        padding: 10px;
+        width: 155px;
+        align-items: center;
+    }
+
+    .title-wrap {
+        background-color: #ffff35;
+        content: '';
+        width: 150px;
+        padding: 20px;
+        position: relative;
+    }
+
+
+
+    .intro-title {
+        color: #fff;
+        background-color: #000000;
+        font-size: 18px;
+        line-height: 41px;
+        font-weight: 400;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-left: 100px;
+        padding: 10px;
+        width: fit-content
+    }
+
+    .text-title {
+        color: #fff;
+        background-color: #101010;
+        font-size: 17px;
+        line-height: 41px;
+        font-weight: 400;
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: left;
+
+        flex: 1 0;
+        width: 470px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+        padding: 19px;
+
+    }
+
+    .text-title a {
+        text-decoration: none;
+        color: black;
+        font-family: "Montserrat", sans-serif;
+
+    }
+
+    .text-title ul {
+        background-color: #ffff35;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .text-title li {
+        position: relative;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin: 9px 0;
+    }
+
+    .b-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        flex-flow: row;
+    }
+
+
+
+    .column-1 img:hover {
+        transform: scale(1.25);
+    }
+
+    .column-1 img {
+        margin-left: 100px;
+        height: 300px;
+    }
+
+    .column-1 {
+        width: 30%;
+    }
+
+    .title-banner p {
+
+        color: #7d8517;
+        margin-bottom: 44px;
+        width: 600px;
+        margin: -14px;
+        padding: 16px;
+        font-size: 33px;
+        display: inline-block;
+        position: relative;
+        padding-left: 50px;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .title-banner h1 {
+        font-family: 'Holtwood One SC', serif;
+        width: 30%;
+        font-size: 70px;
+        color: #300c35;
+        margin: 20px;
+    }
+
+    .footer-wrap {
+        background-color: #d6d6d4;
+
+        justify-content: space-around;
+    }
+
+    .item-facebook {
+        color: #0c0b0b;
+        background-color: #ffff35;
+        width: 43px;
+        height: 43px;
+        line-height: 43px;
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .picture {
+        width: 350px;
+    }
+
+    .team-picture {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .album-pic{
+        width: 33.33%;
+        height: 600px;
+        background-image: url(https://quoctung95.github.io/portfolio/assets/img/gallery/gallery1.png);
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    
+
+    }
+    .album-pic p{
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+        background-color: teal;
+
+    }
+    .album{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .album-pic:hover p {
+    display: flex;
+}
+.album-pic p {
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    background-color: teal;
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+</style>
+
+<body>
+    <header>
+        <div class="wrap-header d-flex">
+
+            <div class="logo d-flex-center">
+
+                <h4>LAMTHANH</h4>
+            </div>
+
+
+            <div class="menu d-flex-center">
+                <ul class="d-flex">
+                    <li> <a href="">Home</a> </li>
+                    <li> <a href="">About</a> </li>
+                    <li><a href=""> Gallerry</a></li>
+                    <li><a href=""> More</a></li>
+                </ul>
+            </div>
+
+            <div class="contact d-flex-center">
+                <span>CONTACT</span>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+
+            <div class="poster d-flex">
+                <div class="content-banner">
+                    <div class="title-banner">
+                        <h1>Welcome to my blog</h1>
+                        <p>This blog is simply that I want to save the memories, moments, the lands I love
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="img-banner">
+
+                </div>
+            </div>
+        </div>
+        <section>
+
+
+            <div class="wrap-picture d-flex-center" style=" margin: 50px 0;">
+                <div class="team-picture d-flex">
+                    <div class="picture">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/diy-paper-flowers-1582662788.jpg?crop=0.631xw:0.945xh;0.0128xw,0.0504xh&resize=640:*"
+                            alt="">
+                        <h3>Creative photography</h3>
+                        <p>The picture emerging in reports from the battlefield is one of complete confusion.</p>
+
+                    </div>
+
+                    <div class="picture">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/diy-paper-flowers-1582662788.jpg?crop=0.631xw:0.945xh;0.0128xw,0.0504xh&resize=640:*"
+                            alt="">
+                        <h3>Creative photography</h3>
+                        <p>The picture emerging in reports from the battlefield is one of complete confusion.</p>
+
+                    </div>
+
+                    <div class="picture">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/diy-paper-flowers-1582662788.jpg?crop=0.631xw:0.945xh;0.0128xw,0.0504xh&resize=640:*"
+                            alt="">
+                        <h3>Creative photography</h3>
+                        <p>The picture emerging in reports from the battlefield is one of complete confusion.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="album">
+                <div class="album-pic"> 
+                    
+                    <!-- <img src="https://quoctung95.github.io/portfolio/assets/img/gallery/gallery1.png" alt=""> -->
+                    <p>Một bức tranh đơn giản</p>
+                </div>
+                <div class="album-pic">
+                    <img src="https://quoctung95.github.io/portfolio/assets/img/gallery/gallery2.png" alt="">
+                </div>
+                <div class="album-pic">
+                    <img src="https://quoctung95.github.io/portfolio/assets/img/gallery/gallery4.png" alt="">
+                    <p>Một bức tranh đơn giản</p>
+                </div>
+                <div class="album-pic">
+                    <img src="https://quoctung95.github.io/portfolio/assets/img/gallery/gallery5.png" alt="">
+                    <p>Một bức tranh đơn giản</p>
+                </div>
+                <div class="album-pic">
+                    <img src="https://quoctung95.github.io/portfolio/assets/img/gallery/gallery6.png" alt="">
+                    <p>Một bức tranh đơn giản</p>
+                </div>
+                <div class="album-pic">
+                    <img src="https://quoctung95.github.io/portfolio/assets/img/gallery/gallery3.png" alt="">
+                    <p>Một bức tranh đơn giản</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-wrap d-flex">
+            <div class="column-1">
+                <h3 class="intro-title">Lam Thanh | ABOUT ME</h3>
+                <img src="https://posterstore.co.uk/images/zoom/pink-flower.jpg" alt="">
+                <div class="text-title">
+                    <p>"My blog"</p>
+                    <p>Bắt đầu với những câu chuyện của chính mình, tôi luôn muốn lưu lại những kỉ niệm đẹp nhất.
+                        Tôithích đi để những câu chuyện kể lại dài hơn số tuổi và để tuổi trẻ dài </p>
+                </div>
+
+
+            </div>
+
+            <div class="column-1">
+                <h3 class="intro-title">Links</h3>
+
+                <div class="text-title">
+                    <ul>
+                        <li><a href="">Bài viết số 1</a></li>
+                        <li><a href="">Bài viết số 1</a></li>
+                        <li><a href="">Bài viết số 1</a></li>
+                        <li><a href="">Bài viết số 1</a></li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div class="column-1">
+                <h3 class="intro-title"> Liên_hệ</h3>
+                <div class="text-title">
+                    <div>
+                        <a target="_blank" href="https://www.facebook.com/" class="item-facebook">
+                            <span class="icon-faceboook">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

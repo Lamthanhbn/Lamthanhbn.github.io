@@ -1,0 +1,458 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-header {
+    background-color: black;
+
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.menu {
+    width: 65%;
+
+}
+
+.menu li {
+    list-style: none;
+    padding: 15px;
+}
+
+.menu li:hover {
+    background-color: #f2af29;
+    border-radius: 30%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.wrap-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 15%;
+}
+
+.contact span {
+    color: cornsilk;
+    display: block;
+    background: darkgoldenrod;
+    margin: 7px;
+    padding: 11px;
+
+}
+
+.contact a {
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300px;
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    background-image: url("https://venturology.files.wordpress.com/2017/05/venice-italy-gondola.jpg?w=1440");
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+.content-banner{
+    position: absolute;
+    top: 15%;   
+    left: 50%;
+    transform: translateX(-50%);
+    background: hsla(0, 12%, 82%, 0.712);
+    width: 1200px;
+}
+
+.content-banner h1 {
+    font-family: 'Skranji', cursive;
+    color: #f2af29;
+    font-size: 95px;
+}
+
+.content-banner h3 {
+    font-family: 'Skranji', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.content-banner p {
+    font-family: 'La Belle Aurore', cursive;
+    color: black;
+    font-size: 45px;
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+}
+
+.page-2 {
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+}
+.img-page:last-child {
+    margin-right: 0;
+}
+.page {
+    margin: 50px 0px;
+
+}
+
+.img-page {
+    height: 530px;
+    width: 510px;
+    margin-right: 30px;
+}
+
+.text-page h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+
+}
+.page-2-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-page h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.img-page p {
+    font-family: 'Kurale', serif;
+    color: black;
+    font-size: 18px;
+
+}
+
+.img-news {
+    width: 70%;
+
+}
+
+.content-news {
+    width: 30%;
+    display: block;
+    margin-left: 50px;
+    border-top: 2px solid;
+}
+
+.news {
+    margin-top: 120px;
+}
+
+.content-news h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    font-size: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-news span {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    font-weight: 500px;
+    font-size: 35px;
+
+}
+
+.content-news p {
+    font-family: 'Kurale', serif;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+
+.blogs {
+    margin: 50px 40px;
+}
+
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 33.333333%;
+    height: 435px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.photo p {
+    position: absolute;
+
+    padding: -21px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    width: fit-content;
+}
+
+.photo:hover p {
+    background-color: #f2af29;
+}
+
+.quotes {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding: 10px 20px 10px 30px;
+    background-color: rgb(208, 223, 167);
+}
+
+.content-quotes {
+
+    font-family: 'Kurale', serif;
+    color: black;
+    font-size: 25px;
+    padding: 50px 200px 50px 200px;
+}
+
+.data {
+    margin: 40px;
+    padding: 40px;
+}
+
+.content-data {
+    width: 60%;
+    height: 804px;
+    display: block;
+    background-color: rgb(230, 208, 136);
+    padding: 200px;
+
+
+}
+
+.content-data h2 {
+    margin-bottom: 60px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 100px;
+    color: white;
+
+}
+
+.content-data p {
+    font-family: 'Kurale', serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.img-data {
+    width: 40%;
+    height: 400px
+}
+
+.line-1 {
+    width: 100%;
+}
+
+.pic-1 {
+    width: 70%;
+    height: 580px;
+    padding: 40px 40px 20px 40px;
+}
+
+.pic-2 {
+    width: 30%;
+    height: 580px;
+    padding: 40px 20px 20px 0px;
+}
+
+.pic-3 {
+    width: 33.333%;
+    height: 580px;
+    padding: 20px 20px 20px 40px;
+}
+
+.pic-4 {
+    width: 30%;
+    height: 580px;
+    padding: 20px 20px 40px 40px;
+}
+
+.pic-5 {
+    width: 70%;
+    height: 580px;
+    padding: 20px 40px 40px 0px;
+
+}
+
+.Destination {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-des {
+    width: 40%;
+    margin-right: 30px;
+    float: left;}
+
+.content-des {
+    height: 100%;}
+.Des-1{
+    margin: 40px;
+    display: block;
+    text-decoration: none;
+    color: #666666;
+}
+.content-des h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content-des p{
+    font-family: tahoma;
+    font-size:20px;
+    font-weight: 700px;
+    text-align: justify;
+}
+.content-des h2:hover {
+    color: #f2af29;
+}
+.title-footer{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 30px;
+}
+.title-footer:hover{
+    color: yellow;
+}
+.content-footer{
+    font-family: tahoma;
+    font-size:15px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+  
+
+.main-footer{
+    background-color: #333333;
+    width: 100%;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links {
+    display: block;
+}
+.wrap-footer{
+    max-width: 1500px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+#email{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-sign-up{
+    display: block;
+    width: 100%;
+    border: 1px solid white;
+    height: 45px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f2af29;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: tahoma;
+}
+.btn-sign-up:hover{
+    background-color: #fbfb13ed;
+}
+.all-links {
+list-style: none;
+padding-left: 10px;
+}
+.all-links li{
+    color: white;
+    font-family: tahuma;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #f2af29;
+    margin-bottom: 20px;
+
+}
+.social-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.icon {
+    width: 50px;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    display: block;
+    background-color: #f2af29;
+    text-align: center;
+    line-height: 50px;
+}
